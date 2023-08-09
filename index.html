@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/ico.ico" type="image/x-icon">
+  <title>Drive2Image Embed</title>
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="mb-4"> <span class="text-primary">Drive</span>2Image Formula <span class="text-primary">Generator</span></h1>
+      <div class="mb-3">
+        <label for="googleDriveLink" class="form-label">Google Drive Image Link:</label>
+        <input type="text" id="googleDriveLink" class="form-control">
+      </div>
+      <div class="mb-3">
+        <button id="generateImageButton" class="btn btn-primary">Generate Image Code</button>
+      </div>
+      <div class="mb-3">
+        <textarea id="imageCode" class="form-control" rows="5" readonly></textarea>
+        <button id="copyButton" class="btn btn-primary mt-3">Copy Formula</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h2 class="mb-4">Preview:</h2>
+      <img id="imagePreview" class="img-fluid" width="500" height="500"  />
+    </div>
+  </div>
+  <hr class="mt-5">
+  <h2 class="mb-4">History:</h2>
+  <ul id="historyList" class="list-group">
+    <!-- History items will be added dynamically here -->
+  </ul>
+  
+ <nav aria-label="Page navigation example" id="pagination" >
+  <ul class="pagination">
+    <!-- Tombol-tombol pagination akan ditambahkan di sini -->
+  </ul>
+</nav>
+
+  
+  
+</div>
+
+<script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+<script src="src/main.ts" type="module"></script>
+</body>
+</html>

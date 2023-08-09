@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*" # Mengarahkan semua rute di domain Netlify
+  to = "https://embed.fujitime.my.id" # Tujuan redirect
+  status = 301 # Kode status HTTP untuk redirect permanen
